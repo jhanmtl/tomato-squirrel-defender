@@ -1,0 +1,12 @@
+Pillow
+albumentations
+joblib
+kaggle
+matplotlib
+matplotlib
+numpy
+pandas
+# pycocotools, has to be installed with conda
+requests
+roboflow
+seaborn

@@ -1,0 +1,28 @@
+version: '3'
+services:
+  squirrel_defender_development:
+    build:
+      context: .
+      target: development
+    shm_size: '16gb'
+    image: ${DEV_IMAGENAME}:${VERSION}
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      - PYTHONPATH=${PYPATH}
+      - ROBOFLOW_TOKEN=${ROBOFLOW_TOKEN}
+      - KAGGLE_USERNAME=${KAGGLE_USERNAME}
+      - KAGGLE_KEY=${KAGGLE_KEY}
+    volumes:
+      - ${PROJECTDIR}:${PROJECTDIR}
+    working_dir: ${PROJECTDIR}    
+
+
+    # enabling gpu
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
