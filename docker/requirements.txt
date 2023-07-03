@@ -1,6 +1,7 @@
 Pillow
 albumentations
 joblib
+jupyterlab
 kaggle
 matplotlib
 matplotlib
