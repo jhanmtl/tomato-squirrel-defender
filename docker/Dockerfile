@@ -16,20 +16,21 @@ ENV EVIDIA_DRIVER_CAPABILITIES=compute,utility
 # =========== development image============
 FROM base as development
 
-# install packages
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-
-
 # pycocotools
 RUN conda install -c conda-forge pycocotools
 
 # segment anything, for possible additional annotations
 RUN pip install git+https://github.com/facebookresearch/segment-anything.git
 
+# for opencv
 RUN apt-get install -y --no-install-recommends \
         libgl1 \
         libglib2.0-0 
+
+# install packages
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
         
 # =========== prod image ==================
 # tbd, but opportunity for cutting down the docker image size if
