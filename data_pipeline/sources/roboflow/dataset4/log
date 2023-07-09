@@ -1,0 +1,20 @@
+[2023-07-09 16:51:29;INFO]    pipeline config
+[2023-07-09 16:51:29;INFO]    dataset:
+  workspace: the-university-of-michigan-openmi
+  project: chonky-squirrels-from-uofm
+  version: 4
+  format: coco
+  overwrite: false
+  download_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4/downloads
+hdf5:
+  annotation_file: _annotations.coco.json
+  possible_splits:
+  - train
+  - test
+  - valid
+  save_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4
+
+[2023-07-09 16:51:30;INFO]    downloading roboflow dataset from the-university-of-michigan-openmi/chonky-squirrels-from-uofm to /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4/downloads
+[2023-07-09 16:51:51;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4/downloads/train to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4/train.hdf5
+[2023-07-09 16:51:57;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4/downloads/valid to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4/valid.hdf5
+[2023-07-09 16:51:58;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4/downloads/test to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset4/test.hdf5

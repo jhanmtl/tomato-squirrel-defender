@@ -1,0 +1,19 @@
+# $global_var$: global_value_substituted
+
+# simple_case1: abc
+# simple_case2: $global_var$
+
+# list_case:
+#   - abc
+#   - $global_var$
+
+nested_case:
+  subkey1: abc
+  subkey2: $global_var$
+  subkey3:
+    sub_subkey1: abc
+    sub_subkey2: def
+    sub_subkey3: $global_var$
+    sub_subkey4:
+      sub_sub_subkey1: abc
+      sub_sub_subkey2: $global_var$ 

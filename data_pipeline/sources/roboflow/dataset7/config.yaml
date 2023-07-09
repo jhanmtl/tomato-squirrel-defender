@@ -1,0 +1,15 @@
+dataset:
+    workspace: squirrel-iest3
+    project: squirrel-detector-distance
+    version: 2
+    format: coco
+    overwrite: false
+    download_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/downloads
+
+hdf5:
+    annotation_file: _annotations.coco.json
+    possible_splits:
+        - train
+        - test
+        - valid
+    save_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7

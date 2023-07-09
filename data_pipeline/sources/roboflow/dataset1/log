@@ -1,0 +1,20 @@
+[2023-07-09 16:49:14;INFO]    pipeline config
+[2023-07-09 16:49:14;INFO]    dataset:
+  workspace: squirrel-iest3
+  project: squirrel-xgfti
+  version: 1
+  format: coco
+  overwrite: false
+  download_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1/downloads
+hdf5:
+  annotation_file: _annotations.coco.json
+  possible_splits:
+  - train
+  - test
+  - valid
+  save_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1
+
+[2023-07-09 16:49:15;INFO]    downloading roboflow dataset from squirrel-iest3/squirrel-xgfti to /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1/downloads
+[2023-07-09 16:49:16;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1/downloads/test to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1/test.hdf5
+[2023-07-09 16:49:17;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1/downloads/valid to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1/valid.hdf5
+[2023-07-09 16:49:17;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1/downloads/train to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset1/train.hdf5

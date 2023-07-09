@@ -1,0 +1,20 @@
+[2023-07-09 16:56:44;INFO]    pipeline config
+[2023-07-09 16:56:44;INFO]    dataset:
+  workspace: squirrel-iest3
+  project: squirrel-detector-distance
+  version: 2
+  format: coco
+  overwrite: false
+  download_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/downloads
+hdf5:
+  annotation_file: _annotations.coco.json
+  possible_splits:
+  - train
+  - test
+  - valid
+  save_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7
+
+[2023-07-09 16:56:46;INFO]    downloading roboflow dataset from squirrel-iest3/squirrel-detector-distance to /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/downloads
+[2023-07-09 16:57:10;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/downloads/valid to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/valid.hdf5
+[2023-07-09 16:57:11;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/downloads/test to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/test.hdf5
+[2023-07-09 16:57:12;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/downloads/train to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset7/train.hdf5

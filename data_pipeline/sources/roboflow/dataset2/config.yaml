@@ -1,0 +1,15 @@
+dataset:
+    workspace: rayhan-papar-nfm40
+    project: squirreldataset-zh4hp
+    version: 1
+    format: coco
+    overwrite: false
+    download_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset2/downloads
+
+hdf5:
+    annotation_file: _annotations.coco.json
+    possible_splits:
+        - train
+        - test
+        - valid
+    save_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset2

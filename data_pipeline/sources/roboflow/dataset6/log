@@ -1,0 +1,20 @@
+[2023-07-09 16:55:03;INFO]    pipeline config
+[2023-07-09 16:55:03;INFO]    dataset:
+  workspace: new-workspace-x0ijl
+  project: animal-detection-dy7jy
+  version: 2
+  format: coco
+  overwrite: false
+  download_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6/downloads
+hdf5:
+  annotation_file: _annotations.coco.json
+  possible_splits:
+  - train
+  - test
+  - valid
+  save_dir: /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6
+
+[2023-07-09 16:55:04;INFO]    downloading roboflow dataset from new-workspace-x0ijl/animal-detection-dy7jy to /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6/downloads
+[2023-07-09 16:55:33;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6/downloads/test to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6/test.hdf5
+[2023-07-09 16:55:36;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6/downloads/valid to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6/valid.hdf5
+[2023-07-09 16:55:42;INFO]    saving annotations and images from /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6/downloads/train to hdf5 at /home/jay/projects/squirrel-defender/data/sources/roboflow/dataset6/train.hdf5
